@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=IM+Fell+English+SC&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgba(39, 35, 35, 0.87);
+  color: rgb(255, 255, 255);
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+#nav-img {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  display: block;
+
+transition: all 0.5s
+ 
+}
+
+#nav-img:hover {
+   transform: scale(1.3);
+}
+
+body {
+  /* height: 97vh; */
+  
+  background-size: fill;
+  background-color: #0c0c0cb0;
+  background-image: url(https://secure.static.tumblr.com/36d52c9ebcfa68e24cae6ddf4ccb3833/rz5ix4j/DDmn4dd0y/tumblr_static_39u9owiqc86cw88swock8o0wc.jpg); 
+  /* background-repeat: no-repeat; */
+  backdrop-filter: grayscale(99%);
+
+}
+
+span{
+  font-size: 2rem;
+}
+
+main {
+  display: grid;
+  place-items: center;
+
+  min-height: 80vh;
+}
+
+#btn-adicionar{
+  text-align: center;
+  
+  background-color: green;
+  color: white;
+  padding: .5rem;
+  cursor: pointer;
+  border: none;
+}
+
+#btn-adicionar:hover {
+  background-color: rgb(17, 177, 17);
+}
+
+.modal {
+  width: 20rem !important;
+  height: 17rem;
+  text-align: center !important;
+
+  background: url(https://bit.ly/3tEtrv3) !important;
+  background-size: cover !important;
+}
+
+input {
+  outline: none;
+  margin: 1rem !important;
+  bottom: 1rem;
+  border-radius: 5%;
+  width: 12rem;
+  height: 2rem;
+}
+
+.titulo{
+  font-family: 'IM Fell English SC', serif;
+  font-size: 1.3rem;
+}
+
+#box-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .7rem;
+}
+
+.box {
+  width: 19rem;
+  height: 29rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(51, 148, 228, 0.842);
+  background-image: url(../img/bk2.jpg);
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: .4rem solid #1d131394;
+  border-radius: 1%;
+}
+
+.box--img {
+   width: 16rem;
+   height: 17rem;
+   background-color: #1d131394;
+   border: .4rem solid #1d131394;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box--descricao {
+  width: 16.5rem;
+  height: 7rem;
+  padding: .3rem;
+  top: 1rem;
+  margin: .4rem;
+  background-color: rgb(10, 171, 211);
+  box-shadow: 3px 3px #01182ba9;
+  font-family: 'IM Fell English SC', serif;
+
+  overflow: hidden;
+} 
+
+h2 {
+  font-size: .5rem;
+}
+
+p {
+  font-size: .1rem;
+}
+
+#btn-contato {
+  margin-top: .5rem;
+  height: 2rem;
+  width: 10rem;
+  color: black;
+  background-color: white;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+#btn-contato:hover {
+  background-color: gray;
+  color: white;
+}
+
+.btt {
+  color: black;
+  background-color: white;
+  width: 3.5rem;
+  height: 1.8rem;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.btt:hover {
+  background-color: gray;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
+
+  height: 5rem;
+  background-color: #030303;
+}
+
+#formContato {
+  background-color: #030303;
+
+}
+
+@media (max-width: 768px) {
+  #formContato {
+    display: grid;
+    place-items: center;
+  }
+}
